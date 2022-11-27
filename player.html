@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Song Select</title>
+        <link rel="stylesheet" type="text/css" href="ipod.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="./ipod.js"></script>
+    </head>
+    <body>
+        <div id="screen">
+            <div class="head-bar-2">
+                
+                <button class = "back-button"><a class = "back-button-link" href ="songs.html"> <i class = "material-icons">
+                    arrow_back
+                </i> </a> </button>
+            </div>
+
+            <div class = "player-information-current">
+                <img class = "player-album-art" src="images/currents.jpg">
+                <p id = "player-song-name"> The Less I Know The Better </p>
+                <p class = "player-song-info">Currents - Tame Impala</p>
+            </div>
+
+            <div class = "player-controls">
+                <div id = "player-time">
+                    <input id = "time-total" type="range" value = "0" min="0" max="180">
+                    <div id = "time-passed">
+                    <div id = "time-elapsed"> 0:00</div>
+                    <div>3:00</div>
+                    </div>
+                </div>
+                <div class = "player-turn-control">
+                    <button>
+                        <i class = "material-icons" onclick = "prevSong()">
+                            skip_previous
+                        </i>
+                    </button>
+                    <button id = "continue-button" onclick = "switchPlay()">
+                        <i class = "material-icons">play_arrow</i>
+                    </button>
+                    <button>
+                        <i class = "material-icons" onclick = "nextSong()">
+                            skip_next
+                        </i>
+                    </button>
+                </div>
+
+                <div class = "volume-portion">
+                    <div class = "volume-level">
+                        <i class = "material-icons">
+                            volume_down
+                        </i>
+                        <div id = "vl0">
+
+                        </div>
+                        <div id = "vl1">
+                            
+                        </div>
+                        <div id = "vl2">
+                            
+                        </div>
+                        <div id = "vl3">
+                            
+                        </div>
+                        <div id = "vl4">
+                            
+                        </div>
+                        <div id = "vl5">
+                            
+                        </div>
+                    </div>
+                    <div class = "volume-rocker">
+                        <button id = "volume-down" onclick="volDown()">
+                            -
+                        </button>
+                        <button id = "volume-up" onclick="volUp()"> 
+                            +
+                         </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   </body>
+</html>

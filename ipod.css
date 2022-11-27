@@ -1,0 +1,269 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	font-family: Avenir, sans-serif;
+}
+
+.head-bar {
+	width: 300px;
+	height: 45px;
+	text-align: center;
+	background-color: #e6ccff;
+	
+}
+
+.head-bar-2 {
+	width: 300px;
+	height: 45px;
+	text-align: center;
+	background-color: #e6ccff;
+	display: flex;
+	align-items: center;
+}
+
+.back-button {
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	background-color: darkgray;
+	margin-left: 5px;
+} 
+
+.back-button img {
+	width: 16px;
+	height: 16px;
+}
+
+.back-button-link {
+	text-decoration: none;
+	color: white;
+ }
+
+.back-button:hover {
+	background-color: maroon;
+ }
+/* 
+	Albums 
+			*/
+.albums-album-wrapper {
+    width: 300px;
+    height: 485px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.redirect-to-song-select {
+	text-decoration: none;
+	color: black;
+}
+
+.albums-album-art {
+	width: 130px;
+    height: 130px;
+    margin: 20px 5px 5px 5px;
+}
+
+.albums-album-name {
+	font-size: 16px;
+    margin: auto;
+	font-family: Avenir, sans-serif;
+	font-weight: bold;
+	
+	
+}
+
+.album-profiles {
+	display: inline-block;
+	text-align: center;
+}
+.albums-artist-name {
+	margin-top: 1px;
+	font-style:italic;
+	font-family: Avenir, sans-serif;
+	font-size: 12px;
+}
+
+/* 
+	Songs 
+			*/
+.songs-info-wrapper {
+	height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.info-songs {
+	display: inline-block;
+	text-align: center;
+
+}
+
+.songs-album-art {
+    height: 150px;
+    width: 150px;
+}
+
+.songs-album-name {
+	font-weight: bold;
+	font-size: 16px;
+
+}
+
+.songs-artist-name {
+	font-style: italic;
+	font-size: 12px;
+}
+
+.list-div-for-songs {
+	height: 335px;
+	width: 300px;
+}
+
+.songs-list {
+	font-size: 12px;
+	counter-reset: my-counter;
+	margin-bottom: 5px;
+	margin-inline-end: 5px;
+}
+
+ol li {
+	counter-increment: my-counter;
+	border: solid;
+	border-color: darkgrey;
+	margin: 2px;
+}
+
+ol li::before {
+	color: black;
+	font-size: 12px;
+}
+
+
+/* 
+	Player 
+			*/
+.player-album-art {
+	width: 210px;
+    height: 210px;
+	max-width: 210px;
+    max-height: 210px;
+    margin: 20px 5px 0px 5px;
+}
+
+.player-song-info {
+
+	font-size: 10pt;
+	font-style: italic;
+	color: #a64dff;
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+	
+}
+
+#player-song-name {
+	color: #757474;
+	font-size: 14pt;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.player-information-current {
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+
+
+.volume-level {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#vl0, #vl1, #vl2, #vl3, #vl4, #vl5  {
+	height: 6px;
+	width: 24px;
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#vl0, #vl1, #vl2 {
+	background-color: #9f5cc4;
+}
+.volume-rocker {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.volume-rocker button {
+	width: 100px;
+	background-color: white;
+	height: 18px;
+	justify-self: space-around;
+}
+.player-turn-control {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input {
+	width: 200px;
+    align-self: center;
+}
+
+.player-turn-control button {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.player-controls{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 200px;
+    align-items: stretch;
+    justify-content: space-evenly;
+
+}
+
+#player-time {
+	display:flex;
+	flex-direction: column;
+}
+
+#time-passed {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
